@@ -78,6 +78,12 @@ serviceMonitor:
 #       kind: Secret
 #       name: sql_exporter_secret
 #       key: CONNECTION_STRING
+
+secret:
+  enabled: false
+  key: CONNECTION_STRING
+  value: sql://foo:bar@baz.qux/corge
+
 config:
   global:
     # -- Scrape timeout
